@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "none",
+    "outFile": "main.js",
+    "strict": true,
+    "lib": ["es2016", "dom"]
+  }
+}
