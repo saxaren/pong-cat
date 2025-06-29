@@ -34,3 +34,23 @@ Spelet laddas direkt i webbläsaren. Öppna `index.html` med Live Server eller p
 - Vanilla JavaScript (genererat från TypeScript)
 
 ## 📂 Projektstruktur
+
+/catpong
+├── index.html
+├── main.ts
+├── main.js
+├── cat.png
+├── yarn.png
+├── cat2.png
+└── README.md
+
+## ✨ Framtida förbättringar
+
+- Ljud vid poäng
+- Game Over-skärm
+- AI-motståndare
+- Valbara teman
+
+## 🐾 Skapare
+
+[GitHub-användarnamn eller ditt namn]

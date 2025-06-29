@@ -5,6 +5,8 @@ let leftScore = 0;
 let rightScore = 0;
 const catIcon = new Image();
 catIcon.src = "cat2.png";
+const backgroundImage = new Image();
+backgroundImage.src = "parralax_1.png";
 canvas.width = 1280;
 canvas.height = 800;
 const paddleWidth = 50;
@@ -44,13 +46,14 @@ function drawBall(b) {
 let imagesLoaded = 0;
 function checkImagesLoaded() {
     imagesLoaded++;
-    if (imagesLoaded === 3) {
+    if (imagesLoaded === 4) {
         loop();
     }
 }
 catImage.onload = checkImagesLoaded;
 yarnImage.onload = checkImagesLoaded;
 catIcon.onload = checkImagesLoaded;
+backgroundImage.onload = checkImagesLoaded;
 function update() {
     ball.x += ball.dx;
     ball.y += ball.dy;
@@ -100,6 +103,8 @@ function update() {
 }
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Rita bakgrund
+    ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
     drawCat(leftPaddle);
     drawCat(rightPaddle);
     drawBall(ball);
